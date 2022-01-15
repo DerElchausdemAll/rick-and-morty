@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Bookmark from "./bookmark";
-import { v4 as uuid } from "uuid";
+// import { v4 as uuid } from "uuid";
 
 // Roboto-Fonts
 import "@fontsource/roboto/300.css";
@@ -68,6 +68,7 @@ const Card = () => {
                 <img
                   style={{ border: "4px solid purple", borderRadius: "20px" }}
                   src={character.image}
+                  alt="Characters"
                 />
               </figure>
               <h1 style={{ display: "flex", justifyContent: "center" }}>
