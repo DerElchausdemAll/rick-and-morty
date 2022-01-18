@@ -13,15 +13,15 @@ const useLocalStorage = (key) => {
   return [value, setValue];
 };
 
-const Bookmark = () => {
-  const [checked, setChecked] = useLocalStorage({ checked: false, id: uuid() });
+const Bookmark = (props) => {
+  const [checked, setChecked] = useLocalStorage(props.id, false);
   return (
     <div>
       <input
         type="checkbox"
         checked={checked}
         onChange={() => {
-          setChecked((previousState) => !previousState);
+          setChecked(!checked);
         }}
       />
     </div>
