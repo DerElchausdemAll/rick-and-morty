@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./cards";
+import Cards from "../organisms/cards/cards";
 import styled from "@emotion/styled";
 
 const StyledContainer = styled.div`
@@ -27,12 +27,12 @@ const Content = () => {
       <br></br>
       <br></br>
       <br></br>
-      <Card
+      <Cards
         style={{
           width: "100vw",
           height: "80vh",
         }}
-      ></Card>
+      ></Cards>
     </StyledContainer>
   );
 };

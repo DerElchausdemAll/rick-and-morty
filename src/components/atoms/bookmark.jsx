@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { v4 as uuid } from "uuid";
 
 const useLocalStorage = (key) => {
   const [value, setValue] = useState(
